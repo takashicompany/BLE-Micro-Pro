@@ -2,7 +2,7 @@
 	{
 		"version":2,
 		"device_info":{"vid":"0xFEED","pid":"0x0000",
-			"name":"endzone34","manufacture":"takashicompany","description":""},
+			"name":"EndZone34","manufacture":"takashicompany","description":""},
 		"matrix":{"rows":4,"cols":10,"device_rows":4, "device_cols":10,
 			"debounce":1,"is_left_hand":1,"diode_direction":0,
 			"row_pins":[15, 14, 13, 12],
