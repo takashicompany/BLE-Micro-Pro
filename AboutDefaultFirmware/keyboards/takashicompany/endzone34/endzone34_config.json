@@ -1,7 +1,7 @@
 {"config":
 	{
 		"version":2,
-		"device_info":{"vid":"0xFEED","pid":"0x0000",
+		"device_info":{"vid":"0x7463","pid":"0x0006",
 			"name":"EndZone34","manufacture":"takashicompany","description":""},
 		"matrix":{"rows":4,"cols":10,"device_rows":4, "device_cols":10,
 			"debounce":1,"is_left_hand":1,"diode_direction":0,
@@ -14,6 +14,6 @@
 		"mode":"SINGLE","startup":1,
 		"peripheral":{"max_interval":60,"min_interval":30,"slave_latency":7},
 		"central":{"max_interval":60,"min_interval":30,"slave_latency":0},
-		"led":{"pin":1, "num":7},
+		"led":{"pin":1, "num":9},
 		"keymap":{"locale":"US","use_ascii":0}
 }}
