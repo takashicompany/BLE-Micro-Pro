@@ -124,17 +124,6 @@ Wire Wire Line
 Wire Wire Line
 	5300 3800 5300 3850
 $Comp
-L Switch:SW_Push_SPDT SW?
-U 1 1 61D7B1A6
-P 5900 3900
-F 0 "SW?" H 5900 4185 50  0000 C CNN
-F 1 "SW_Push_SPDT" H 5900 4094 50  0000 C CNN
-F 2 "MyLib:MK12C02" H 5900 3900 50  0001 C CNN
-F 3 "~" H 5900 3900 50  0001 C CNN
-	1    5900 3900
-	-1   0    0    1   
-$EndComp
-$Comp
 L Connector:Conn_01x01_Female P1
 U 1 1 61D7BC44
 P 6800 3800
@@ -163,4 +152,16 @@ Wire Wire Line
 Connection ~ 6300 3900
 Wire Wire Line
 	6100 3900 6300 3900
+$Comp
+L Switch:SW_Push_SPDT SW?
+U 1 1 61D7B1A6
+P 5900 3900
+F 0 "SW?" H 5900 4185 50  0000 C CNN
+F 1 "SW_Push_SPDT" H 5900 4094 50  0000 C CNN
+F 2 "MyLib:MK12C02" H 5900 3900 50  0001 C CNN
+F 3 "~" H 5900 3900 50  0001 C CNN
+	1    5900 3900
+	-1   0    0    1   
+$EndComp
+NoConn ~ 5700 4000
 $EndSCHEMATC
