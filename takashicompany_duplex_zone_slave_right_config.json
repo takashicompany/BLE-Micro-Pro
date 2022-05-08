@@ -1,0 +1,19 @@
+{"config":
+	{
+		"version":2,
+		"device_info":{"vid":"0x7463","pid":"0x0011",
+			"name":"Duplex Zone","manufacture":"takashicompany","description":""},
+		"matrix":{"rows":3,"cols":12,"device_rows":3, "device_cols":6,
+			"debounce":1,"is_left_hand":0,"diode_direction":0,
+			"row_pins":[10, 11, 12],
+			"col_pins":[7, 8, 9, 18, 17, 16],
+		"layout":[1, 4, 2, 5, 3, 0,
+			 7, 10, 8, 11, 9, 0,
+			 13, 16, 14, 17, 15, 0,
+			 6, 12, 18]},
+		"mode":"SPLIT_SLAVE","startup":1,
+		"peripheral":{"max_interval":60,"min_interval":30,"slave_latency":7},
+		"central":{"max_interval":60,"min_interval":30,"slave_latency":0},
+		"led":{"pin":1, "num":6},
+		"keymap":{"locale":"US","use_ascii":0}
+}}
