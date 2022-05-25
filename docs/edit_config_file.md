@@ -2,7 +2,24 @@
 
 ## QMK用の設定から変換する
 
-Pro Micro用のQMKがすでにある場合、[変換スクリプト](https://github.com/sekigon-gonnoc/BLE-Micro-Pro/blob/master/AboutDefaultFirmware/keyboards/config_converter.py)を用いて`config.json`を生成できます。
+Pro Micro用のQMKがすでにある場合はその設定を利用してBLE Micro Pro向けの`config.json`を生成できます。
+ベースとなるQMKのバージョンに応じて下記のいずれかの方法を使用してください
+
+### QMK公式にマージざれている場合
+
+https://sekigon-gonnoc.github.io/ble-micro-pro-config-generator/
+
+でkeyboardとlayoutを選択してconvertボタンをクリックすると設定が生成されます。
+
+### info.jsonに各種設定を用意している場合
+
+https://sekigon-gonnoc.github.io/ble-micro-pro-config-generator/
+
+のテキストボックスにinfo.jsonの中身を貼り付けて、検出されたlayoutを選択してconvertボタンをクリックすると設定が生成されます。
+
+### config.hに各種設定を用意している場合
+
+[変換スクリプト](https://github.com/sekigon-gonnoc/BLE-Micro-Pro/blob/master/AboutDefaultFirmware/keyboards/config_converter.py)を用いて`config.json`を生成できます。
 
 ```
 ./keyboards/config_converter.py ~/qmk_firmware/helix/rev2
@@ -30,6 +47,7 @@ LAYOUTマクロなどが複数定義されている場合は検出されたレ�
 |col_pins|int array|マトリクスの列ピン。番号はPINxxに対応|
 |layout|int array|qmkのレイアウトマクロに対応するもの。詳細は後述|
 |mode|SPLIT_MASTER, SPLIT_SLAVE, SINGLE|分割マスター、分割スレーブ、一体型|
+|startup|int|電源が入ったタイミングでBLEのアドバタイズを実行するかどうか。 [0]は実行しない、[1]で実行する。|
 |led->pin|int array|LED(ws2812系)のピン。番号はPINxxに対応|
 |led->num|int|LEDの数|
 |keymap->locale|"US" or "JP"|USキーボードとして接続するか、JPキーボードとして接続するかの設定。keymap.jsonの変換・表示の挙動に影響|
